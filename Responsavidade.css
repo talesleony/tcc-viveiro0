@@ -1,0 +1,87 @@
+/* Estilo para telas menores */
+@media screen and (max-width: 768px) {
+    .top-image {
+        height: 20vh; /* Manter a imagem superior ocupando 20% da tela */
+    }
+
+    .half-circle {
+        width: 30%; /* Defina a largura da meia bola branca em relação à largura da tela */
+        height: 70px;
+    }
+
+    .center-image {
+        width: 30%; /* Defina a largura da imagem dentro da meia bola em relação à largura da tela */
+        height: 100px;
+    }
+
+    .page-divider {
+        width: 50%; /* Manter 50% da largura para os botões */
+        height: 40vh; /* Reduzir a altura dos botões */
+    }
+
+    .ball-image {
+        width: 30%; /* Defina a largura dos botões em relação à largura da tela */
+        height: 200px;
+    }
+
+    .ball-image:after {
+        font-size: 16px; /* Reduzir o tamanho do texto abaixo dos botões */
+    }
+}
+
+/* Estilo para telas maiores */
+@media screen and (min-width: 1200px) {
+    .top-image {
+        height: 20vh; /* Manter a imagem superior ocupando 20% da tela */
+    }
+
+    .half-circle {
+        width: 30%; /* Defina a largura da meia bola branca em relação à largura da tela */
+        height: 140px;
+    }
+
+    .center-image {
+        width: 30%; /* Defina a largura da imagem dentro da meia bola em relação à largura da tela */
+        height: 200px;
+    }
+
+    .page-divider {
+        width: 33%; /* Manter 33% da largura para os botões */
+        height: 70vh; /* Aumentar a altura dos botões para telas maiores */
+    }
+
+    .ball-image {
+        width: 30%; /* Defina a largura dos botões em relação à largura da tela */
+        height: 400px;
+    }
+
+    .ball-image:after {
+        font-size: 20px; /* Aumentar o tamanho do texto abaixo dos botões para telas maiores */
+    }
+}
+
+/* Estilo para telas menores */
+@media screen and (max-width: 768px) {
+    .logo-text {
+        font-size: 30px; /* Defina o tamanho de fonte desejado para telas menores */
+    }
+}
+
+/* Estilo para telas maiores */
+@media screen and (min-width: 1200px) {
+    .logo-text {
+        font-size: 60px; /* Defina o tamanho de fonte desejado para telas maiores */
+    }
+
+    .nav-button {
+        background-color: blue; /* Cor de fundo azul (ou a cor desejada) */
+        border: none;
+        border-radius: 20px; /* Bordas arredondadas */
+        padding: 2%; /* Use porcentagens para o preenchimento, ajuste conforme necessário */
+        margin: 1%; /* Use porcentagens para a margem, ajuste conforme necessário */
+        cursor: pointer;
+        font-size: 2.5vw; /* Use unidades de viewport width (vw) para o tamanho da fonte, ajuste conforme necessário */
+        /* width: auto; Remova essa linha para permitir que os botões ajustem automaticamente o tamanho ao conteúdo */
+    }
+    
+}

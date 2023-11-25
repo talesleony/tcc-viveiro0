@@ -1,0 +1,173 @@
+/* Definições de estilo para a página */
+
+/* Estilos gerais para o layout e aparência */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent; /* Remove a cor de fundo padrão (branco) */
+}
+
+/* Opacidade para um elemento específico */
+.ocupacidade {
+  opacity: 0.5;
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+  background-image: url('Imagens/fundonavbar.jpg'); /* Define a imagem de fundo da barra de navegação */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  padding: 10px 0;
+  min-width: 300px; /* Define um valor mínimo para a largura da barra de navegação */
+}
+
+/* Estilos dos botões na barra de navegação */
+.nav-buttons {
+  display: flex;
+  align-items: center; /* Alinha os botões verticalmente no centro */
+}
+
+.nav-button {
+  background-color: white; /* Cor de fundo branca para os botões */
+  border: none;
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra aos botões */
+}
+
+.nav-button:hover {
+  background-color: #ccc; /* Cor de fundo dos botões ao passar o mouse */
+  transition: background-color 0.3s;
+}
+
+/* Layout em colunas com estilo para caixas editáveis */
+.flex-container {
+  display: flex;
+}
+
+.left-column {
+  flex: 0 0 30%; /* 30% à esquerda */
+}
+
+.right-column {
+  flex: 0 0 70%; /* 70% à direita */
+  background-color: #4B958A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+/* Estilo das caixas de entrada editáveis */
+.editable-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.editable-box {
+  background-color: white;
+  border: none;
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 20px 40px; /* O dobro do tamanho original */
+  margin: 10px 0;
+  cursor: text; /* Transforma o cursor em um indicador de texto ao passar o mouse */
+  font-size: 16px;
+  text-align: center;
+  width: 75%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra às caixas de texto */
+}
+
+/* Estilos para botões e contêiner de botões */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button,
+.clear-button,
+.edit-button,
+.delete-button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #B3D8A5;
+  color: #201e1e;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  width: 85%; /* Reduzindo a largura em 15% */
+  height: 50px; /* Mantendo a altura */
+}
+
+/* Estilização específica para o botão de edição */
+.edit-button {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Estilos para contêiner de resultados */
+.resultado-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+/* Estilos para os botões Editar e Delete */
+.edit-button,
+.delete-button {
+    padding: 10px 15px; /* Ajuste de tamanho para os botões */
+    margin: 5px 5px; /* Ajuste de margem entre os botões */
+    vertical-align: middle; /* Alinhamento vertical central */
+    width: 100px; /* Definindo a largura fixa para os botões */
+}
+
+/* Contêiner para os botões Editar e Delete */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px; /* Definindo a largura fixa para o contêiner dos botões */
+}
+
+
+/* Aumento da largura e ajuste do layout para as informações registradas */
+.resultado-container {
+  margin-top: 15px;
+  padding: 10px; /* Adicione um espaçamento interno */
+  margin-bottom: 15px; /* Adicione margem inferior para separar os itens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Evita que as informações quebrem de linha */
+}
+
+.resultado-item {
+  white-space: nowrap; /* Evita que as informações quebrem de linha */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura */
+  flex-grow: 1; /* Expande as informações registradas para preencher o espaço */
+}
+
+/* Estilos para os botões Editar e Delete */
+.edit-button,
+.delete-button {
+    padding: 10px 15px; /* Ajuste de tamanho para os botões */
+    margin: 5px 5px; /* Ajuste de margem entre os botões */
+    vertical-align: middle; /* Alinhamento vertical central */
+}
+
+
+/* ... Outros estilos ... */
+
+
+/* ... Outros estilos ... */
+

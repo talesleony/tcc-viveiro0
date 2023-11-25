@@ -1,0 +1,143 @@
+/* Configurações básicas do corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para a imagem superior ocupando 20% da tela */
+.top-image {
+    width: 100%;
+    height: 20vh;
+    background: url("imagens/otinha.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Estilo para a meia bola branca */
+.half-circle {
+    width: 300px;
+    height: 140px;
+    background-color: white;
+    border-radius: 180px 180px 0 0;
+    position: absolute;
+    bottom: 0; /* Ajustado para 0 para que a meia bola fique na parte inferior da imagem */
+    right: 10px; /* Posicionado à direita com 10px de espaço */
+    z-index: 1;
+}
+
+/* Estilo para a imagem dentro da meia bola */
+.center-image {
+    width: 300px;
+    height: 200px;
+    background: url("imagens/PROJETO_VIVEIRINHO-removebg.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* Estilo para o título */
+.logo-text {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px; 
+    color: rgb(108, 124, 37);
+    height: 266px;
+    letter-spacing: 0;
+}
+
+/* Estilo para o efeito de stroke no título */
+.logo-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: none;
+    z-index: -1;
+}
+
+/* Estilo para a divisão vertical da página */
+.page-divider {
+    width: 33%;
+    height: 70vh; 
+    display: inline-block;
+    vertical-align: top;
+    top: -100px; 
+    background-color: transparent; 
+}
+
+/* Estilos para todos os quadrados */
+.ball-image-1,
+.ball-image-2,
+.ball-image-3 {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 77px; 
+    position: relative;
+    top: -165px; 
+    left: calc(50% + 4px);
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0.5;
+}
+
+/* Texto abaixo dos quadrados */
+.ball-image-1:after,
+.ball-image-2:after,
+.ball-image-3:after {
+    content: attr(data-text);
+    display: block;
+    /* Parametros dos textos */
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold; 
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ball-image-1:hover,
+.ball-image-2:hover,
+.ball-image-3:hover {
+    opacity: 1; /* Aumenta a opacidade para 100% quando o mouse está sobre os botões */
+}
+
+
+
+
+/* Texto para o quadrado 1 */
+.ball-image-1:after {
+    content: "Registro dos lotes de mudas";
+}
+/* Texto para o quadrado 2 */
+.ball-image-2:after {
+    content: "Registro das saídas do lote e reservas";
+}
+
+/* Texto para o quadrado 3 */
+.ball-image-3:after {
+    content: "Registro das mudas e seus substratos";
+}
+
+/* Imagem para o primeiro quadrado */
+.ball-image-1 {
+    background: url("Imagens/OIG.QG.jpg") no-repeat center;
+}
+
+/* Imagem para o segundo quadrado */
+.ball-image-2 {
+    background: url("imagens/20a73hj7.png") no-repeat center;
+}
+
+/* Imagem para o terceiro quadrado */
+.ball-image-3 {
+    background: url("Imagens/otinha.jpg") no-repeat center;
+}

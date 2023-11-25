@@ -1,0 +1,74 @@
+/* Pagina-Lote.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent; /* Removendo a cor de fundo padrão (branco) */
+}
+
+.navbar {
+    background-image: url('Imagens/fundonavbar.jpg'); /* Define a imagem de fundo da navbar */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    padding: 10px 0;
+    min-width: 300px; /* Defina um valor mínimo para a largura da barra de navegação */
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center; /* Alinha os botões verticalmente no centro */
+}
+
+.nav-button {
+    background-color: white; /* Cor de fundo branca para os botões */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra aos botões */
+}
+
+.nav-button:hover {
+    background-color: #ccc;
+    transition: background-color 0.3s;
+}
+
+.ocupacidade {
+    opacity: 0.5;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.left-column {
+    flex: 0 0 50%; 
+}
+
+.right-column {
+    flex: 0 0 50%;
+}
+
+/* Pagina-Lote.css */
+
+/* ... (código CSS anterior) ... */
+
+.flexible-button {
+    max-width: 300px;
+    height: 400px;
+    background-color: #B3D8A5;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
